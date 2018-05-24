@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/order/order",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "#dddddd",
+    "backgroundColor": "#ffffff",
+    "navigationBarBackgroundColor": "#59626A",
+    "navigationBarTitleText": "西咸公交",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "",
+    "selectedColor": "#59626A",
+    "list": [
+      {
+        "iconPath": "",
+        "selectedIconPath": "",
+        "pagePath": "pages/index/index",
+        "text": "购票"
+      },
+      {
+        "iconPath": "",
+        "selectedIconPath": "",
+        "pagePath": "pages/order/order",
+        "text": "订单"
+      }
+    ]
+  }
+}

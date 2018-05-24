@@ -1,0 +1,4 @@
+/**index.wxss**/
+.btn-bottom{
+  margin-bottom: 30rpx;
+}

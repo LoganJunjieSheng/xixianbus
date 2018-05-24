@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+  <wxc-input type="text" icon="search" placeholder="请输入终点（可以模糊搜索）" value="{{end}}" bindinput='inputEnd'>
+  </wxc-input>
+  <wxc-button bindtap='search' size="large" type="secondary" class='btn-bottom'>开始搜索</wxc-button>
+  <wxc-button size="large" type="info">所有路线</wxc-button>
+
+</view>
