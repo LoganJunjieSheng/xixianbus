@@ -19,7 +19,14 @@ Page({
   },
   //开始搜索
   search: function () {
-    console.log(this.data.end);
+    let that=this;
+    // console.log(app.globalData)
+    let end=this.data.end;
+    app.globalData.searchEnd=end;
+    // console.log(app.globalData.searchEnd)
+    wx.navigateTo({
+      url: '../routeList/routeList'
+    })
   },
   //事件处理函数
   bindViewTap: function () {
@@ -28,8 +35,7 @@ Page({
     })
   },
   onLoad: function () {
-    console.log(app.globalData.openid);
-
+    // console.log(app.globalData.openid);
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

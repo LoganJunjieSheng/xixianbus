@@ -1,4 +1,4 @@
-const app = getApp()
+const app = getApp();
 // pages/order/order.js
 Page({
 
@@ -6,7 +6,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    list: [{
+      id: '0',
+      title: '全部订单'
+    },
+    {
+      id: '1',
+      title: '全部订单'
+    }],
+    selectedId: '0',
   },
 
   /**
@@ -15,14 +23,14 @@ Page({
   onLoad: function (options) {
     const openId = app.globalData.openid;
     wx.request({
-      url: 'http://192.168.1.118:8022/xixianbus/allOrder',
-      data:{
-        userId:openId,
+      url: app.globalData.ip +'/xixianbus/allOrder',
+      data: {
+        userId: openId,
       },
-      method:'POST',
+      method: 'POST',
       success: function (res) {
         console.log(res);
-       }
+      }
     })
   },
 
@@ -30,48 +38,48 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-  
+
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-  
+
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-  
+
   },
 
   /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-  
+
   }
 })

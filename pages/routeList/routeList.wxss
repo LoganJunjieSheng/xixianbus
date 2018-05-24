@@ -1,0 +1,19 @@
+/* pages/routeList.wxss */
+
+.title {
+  text-align: center;
+  color: #59626a;
+  padding: 30rpx 0;
+  font-size: 50rpx;
+}
+
+.route{
+  margin: 30rpx 0;
+  text-align: center;
+}
+.stop{
+  margin: 30rpx 0;
+  text-align: center;
+  font-size: 25rpx;
+  color:#666666;
+}

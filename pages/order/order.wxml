@@ -1,5 +1,17 @@
 <!--pages/order/order.wxml-->
-<text>pages/order/order.wxml</text>
-<wxc-panel title="标题" bind:click="onClick">
-    <view class="content">内容</view>
-  </wxc-panel>
+<zan-tab
+  scroll="{{ scroll }}"
+  list="{{ list }}"
+  selected-id="{{ selectedId }}"
+  height="{{ height }}"
+  fixed="{{ fixed }}"
+  bindtabchange="handleTabChange"
+/>
+<zan-panel>
+<zan-card card-class="test-card" thumb="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg" price="999.99" title="西咸大厦-电视塔" num="2" desc="人才大厦-啦啦啦" time='8月30日 17:30' status="已发货">
+</zan-card>
+</zan-panel>
+<zan-panel>
+<zan-card card-class="test-card" thumb="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg" price="999.99" title="西咸大厦-电视塔" num="2" desc="人才大厦-啦啦啦" time='8月30日 17:30' status="已发货">
+</zan-card>
+</zan-panel>

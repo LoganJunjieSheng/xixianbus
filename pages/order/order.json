@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-   "wxc-panel": "../../dist/packages/@minui/wxc-panel/dist/index"
+    "zan-card": "../../dist/packages/@zanui/card/index",
+    "zan-panel": "../../dist/packages/@zanui/panel/index",
+    "zan-tab": "../../dist/packages/@zanui/tab/index"
   }
 }

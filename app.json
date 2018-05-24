@@ -1,7 +1,9 @@
 {
   "pages": [
+    "pages/routeList/routeList",
+    "pages/index/index",
     "pages/order/order",
-    "pages/index/index"
+    "pages/routeInfo/routeInfo"
   ],
   "window": {
     "backgroundTextStyle": "#dddddd",
@@ -15,14 +17,10 @@
     "selectedColor": "#59626A",
     "list": [
       {
-        "iconPath": "",
-        "selectedIconPath": "",
         "pagePath": "pages/index/index",
         "text": "购票"
       },
       {
-        "iconPath": "",
-        "selectedIconPath": "",
         "pagePath": "pages/order/order",
         "text": "订单"
       }

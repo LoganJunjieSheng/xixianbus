@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "zan-panel": "../../dist/packages/@zanui/panel/index"
+  }
+}

@@ -1,0 +1,24 @@
+<!--pages/routeList.wxml-->
+<view class='title'>
+  站点：{{searchEnd}}
+</view>
+<!-- <view>
+  <zan-panel>
+    <view class='route'>滴水湖——罗山路</view>
+    <view class='stop'>滴水湖-临港大道-书院-惠南东-惠南</view>
+  </zan-panel>
+
+</view> -->
+
+<view wx:for="{{routeList}}" wx:for-index="routeIndex" wx:for-item="route" wx:key='route'>
+  <zan-panel bindtap='toRouteInfo' data-route='{{route}}'>
+    <view class='route' catchtap='toRouteInfo' data-route='{{route}}'>
+      {{route.stops[0].stopname}}——{{route.stops[route.stops.length-1].stopname}}
+    </view>
+    <view class='stop'>
+      <span wx:for='{{routeList[routeIndex].stops}}' wx:for-index="stopIndex" wx:for-item="stop" wx:key='stop' catchtap='toRouteInfo' data-route='{{route}}'>{{stop.stopname}}
+        <span wx:if="{{routeList[routeIndex].stops.length!==stopIndex+1}}" catchtap='toRouteInfo' data-route='{{route}}'>-</span>
+      </span>
+    </view>
+  </zan-panel>
+</view>
