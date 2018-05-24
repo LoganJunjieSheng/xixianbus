@@ -1,9 +1,10 @@
 {
   "pages": [
+    "pages/routeInfo/routeInfo",
     "pages/routeList/routeList",
     "pages/index/index",
-    "pages/order/order",
-    "pages/routeInfo/routeInfo"
+    "pages/order/order"
+    
   ],
   "window": {
     "backgroundTextStyle": "#dddddd",

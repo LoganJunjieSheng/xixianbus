@@ -1,1 +1,7 @@
 /* pages/routeInfo/routeInfo.wxss */
+.title {
+  text-align: center;
+  color: #59626a;
+  padding: 30rpx 0;
+  font-size: 40rpx;
+}

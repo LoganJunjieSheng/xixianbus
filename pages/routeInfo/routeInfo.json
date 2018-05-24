@@ -1,1 +1,7 @@
-{}
+{
+  "usingComponents": {
+    "zan-card": "../../dist/packages/@zanui/card/index",
+    "zan-panel": "../../dist/packages/@zanui/panel/index",
+    "zan-tab": "../../dist/packages/@zanui/tab/index"
+  }
+}

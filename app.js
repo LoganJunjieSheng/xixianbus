@@ -54,7 +54,7 @@ App({
     appid:'wx4ecfcf7d9529ad0c',
     secret:'c4874c9087aee894541f3917c3cbc82a',
     openid:'',
-    ip:'http://192.168.43.200:8022',
+    ip:'http://192.168.1.118:8080',
     searchEnd:null,
     selectRoute:null,
   }

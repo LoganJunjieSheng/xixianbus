@@ -1,2 +1,20 @@
 <!--pages/routeInfo/routeInfo.wxml-->
-<text>pages/routeInfo/routeInfo.wxml</text>
+
+ <view class='title'>
+  {{stopName[0]}}——{{stopName[stopName.length-1]}}
+</view> 
+
+ <view>
+  <picker bindchange="bindStartStop" value="{{startIndex}}" range="{{stopName}}">
+    <view class="picker">
+      起点：{{stopName[startIndex]}}
+    </view>
+  </picker>
+</view> 
+<view>
+  <picker bindchange="bindEndStop" value="{{endIndex}}" range="{{stopName}}">
+    <view class="picker">
+      终点：{{stopName[endIndex]}}
+    </view>
+  </picker>
+</view> 
